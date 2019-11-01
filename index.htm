@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--------------------------------------------->
+		<!-- 		       META'S BALISES            -->
+		<!--------------------------------------------->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<!--------------------------------------------->
+		<!-- 		      CSS'S BALISES            	 -->
+		<!--------------------------------------------->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/index.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/animate.css">
+		<!--------------------------------------------->
+		<!-- 	  GOOGLE FONT IMPORTED BALISES       -->
+		<!--------------------------------------------->
+		<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+		<!--------------------------------------------->
+		<!-- 		   LOGO  NGBOADO ICON            -->
+		<!--------------------------------------------->
+		<link rel="icon" type="image/png" href="multipart/logo.png" />
+		<!--------------------------------------------->
+		<!-- 		        PAGES'S TITLE            -->
+		<!--------------------------------------------->
+		<title>N'gboadô EVENTS | Accueil</title>
+  </head>
+  <body>
+
+    <!--------------------------------------------->
+		<!-- 		    GLOBAL CONTAINER             -->
+		<!--------------------------------------------->
+		<div class="container-fluid" id="Global-container">
+      <div class="row row-container">
+
+        <!--navbar transparent width logo and text-->
+        <div class="navbar navbar-default navbar-fixed-top">
+
+          <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 container-logo-text animated fadeInDown" style="animation-delay: 5s;">
+
+            <!--logo ngboado-->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <img src="multipart/logo.png" class="logo" alt="">
+            </div>
+
+            <!--name website-->
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-pull-1 col-md-pull-1 col-sm-pull-1 col-xs-pull-0">
+              <h2 class="name-website">DO EVENTS </h2>
+            </div>
+
+          </div>
+        <!--navbar transparent width logo and text end-->
+        </div>
+
+        <!-- text slide-->
+        <div class="col-lg-12 col-md-12 container-slide-text">
+
+          <h1 class="text-slide animated fadeInLeft" style="animation-delay: 1s; text-shadow: 2px 2px 4px #000000;">
+            <span class="ngboado" style="color: #019939;">N'GBOADO EVENTS</span>
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "VOUS ETES LA BIENVENUE !", "PARTICIPEZ A NOS EVENEMENTS", "PRENEZ VOS CARTES D INVITATION", ", VOUS SEREZ UN ACTEUR DU SOCIAL" ]'>
+             </span>
+          </h1>
+          <br/>
+          <h2 class="text-slide-2 animated fadeInRight" style="animation-delay: 2s;"> Boutique évènements officiel de N'GBOADO </h2>
+
+        <!-- text slide end-->
+        </div>
+
+        <!-- button enter-->
+        <div class="col-lg-12 col-md-12 bouton-container">
+
+          <button class="animated zoomIn" style="animation-delay: 3s; background: #019939;" type="button" name="button"> <a href="home.htm"> PRECEDENT </a> </button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="animated zoomIn" style="animation-delay: 4s;" type="button" name="button"> <a href="home.htm"> DECOUVRIR </a> </button>
+
+        <!-- button enter end-->
+        </div>
+
+      </div>
+
+      <!--------------------------------------------->
+  		<!-- 		    GLOBAL CONTAINER END         -->
+  		<!--------------------------------------------->
+    </div>
+
+    <!--------------------------------------------->
+		<!--		    JAVASCRIPT BALISES  		 -->
+		<!--------------------------------------------->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      var TxtRotate = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+      };
+
+      TxtRotate.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function() {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function() {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i=0; i<elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-rotate');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+      };
+    </script>
+		<!--------------------------------------------->
+		<!-- 	 IMPORTED JAVASCRIPT'S BALISES       -->
+		<!--------------------------------------------->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

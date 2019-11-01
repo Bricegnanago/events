@@ -1,0 +1,60 @@
+body{margin: 0px; font-family: 'Acme', sans-serif; color: white; height: 100%; overflow: hidden;}
+
+a{text-decoration: none; color: white;}
+
+a:hover{text-decoration: none; color: white;}
+
+.row-container{background: url('../../multipart/auditorium-2816353_960_720.jpg'); background-size: cover;min-height: 100vh;}
+
+.navbar{background-color: transparent; height: 80px; border: none; margin-top: 2.5%;}
+
+.container-logo-text{margin-left: 1%;}
+
+.logo{height: 58px; width: 58px; text-shadow: 2px 2px 4px #000000; border-radius: 50px;}
+
+.name-website{ font-weight: bold; margin-left: -13%; text-shadow: 2px 2px 4px #000000;font-size: 1.3em;}
+
+.container-slide-text{margin-top: 200px; text-align: center;}
+
+.text-slide{font-weight: bold;font-size: 3.5em;}
+
+.text-slide-2{text-shadow: 2px 2px 4px #000000; margin-top: 1.5%;}
+
+.ngboado{}
+
+.bouton-container{text-align: center;margin-top: 3%;}
+
+button{background: transparent;border: 2px solid white;color: white;padding: 7px;font-size: 16px;border-radius: 35px;padding-left: 20px;text-shadow: 2px 2px 4px #000000;box-shadow: 2px 2px 4px #000000;padding-right: 20px;}
+
+/*RESPONSIVE CODE CSS */
+
+@media only screen and (max-width: 767px){
+
+  .row-container{background: url('../../multipart/auditorium-2816353_960_720 - copie.jpg');background-size: cover;height: 650px;}
+
+  .container-slide-text{margin-top: 240px;text-align: center;}
+
+  .text-slide{font-weight: bold;font-size: 2.1em;}
+
+  .text-slide-2{display: none;}
+
+  .bouton-container{margin-top: 2.5%;}
+
+  .name-website{margin-left: 0px; margin-left: -26.5%;}
+}
+
+@media only screen and (max-width: 575px){
+  .name-website{margin-left: 0px; margin-left: -15%;}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+  .text-slide{font-size: 2.7em;}
+
+  .text-slide-2{font-size: 2em;}
+
+  .bouton-container{margin-top: 4.5%;}
+
+  .container-slide-text{margin-top: 255px;}
+}

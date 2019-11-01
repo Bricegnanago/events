@@ -1,0 +1,38 @@
+body{margin: 0px; font-family: 'Acme', sans-serif; color: white; height: 100%; overflow-x: hidden;}
+
+.great-opacity-container{background: black; opacity: .8; display: none; height: 100%; margin-left: -1.5%; width: 102%; background-size: cover; overflow: hidden; position: fixed; top: 0px;}
+
+.views-billeterie{background: white; height: 500px; margin-left: 0%; margin-top: 0%;}
+
+a{text-decoration: none; color: white;}
+
+a:hover{text-decoration: none; color: white;}
+
+/*fixed bar*/
+.fixed-bar{background: linear-gradient(90deg, #3D952B, #336699); height: 50px; width: 100%; position: fixed; top: 0%; margin-top: 0px; border-radius: 0px;}
+
+/*logo and text container*/
+.logo_and_text_container{margin-left: 10%; font-family: 'Open Sans', Helvetica, Arial, sans-serif;}
+
+/*logo icon*/
+.logo_icon{margin-top: 5.5px; border-radius: 50%;}
+
+/*logo text */
+.logo_text{margin-top: 8px; font-weight: bold; margin-left: -43%;}
+
+.logo_text > h5{font-weight: bold;}
+
+/*home icons container*/
+.home_icons_container{margin-top: 13px; margin-left: 41%;}
+
+.row-two{background: url('../../multipart/auditorium-2816353_960_720.jpg'); background-size: cover; height: 625px;}
+
+button{border: 2px solid white;color: white;padding: 5px;font-size: 16px;border-radius: 35px;padding-left: 20px;text-shadow: 2px 2px 4px #000000;box-shadow: 2px 2px 4px #000000;padding-right: 20px; margin-top: -8%;}
+
+.radio-omoney{background: ;  height: 30px;  width: 31px; border: 1px solid silver; border-radius: 3px; cursor: pointer;}
+
+.omoney{position: absolute; left: 3%; top: -8%; display: none;}
+
+.radio-mtn-money{background: ; height: 30px;   width: 31px; border: 1px solid silver; border-radius: 3px; cursor: pointer;}
+
+.mtn-money{position: absolute; left: 3%; top: -10%; display: none;}

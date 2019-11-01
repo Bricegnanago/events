@@ -1,0 +1,173 @@
+/*BODY CODE*/
+body{margin: 0px; font-family: 'Acme', sans-serif; color: white; height: 100%; overflow-x: hidden;}
+
+/*great opacity when people click on an items (exemple items view more about an event)*/
+.great-opacity-container{background: black; opacity: .8; display: none; height: 100%; margin-left: -1.5%; width: 102%; background-size: cover; overflow: hidden; position: fixed; top: 0px;}
+
+/*popup to have a general view about an event*/
+.views{background: white; height: 500px; position: fixed; top: 43%; margin-left: 0%; display: none;}
+.views-last-event{background: white; height: 500px; position: fixed; top: 75.4%; margin-left: 0%; display: none;}
+
+/*a css*/
+a{text-decoration: none; color: white;}
+a:hover{text-decoration: none; color: white;}
+
+/*fixed bar*/
+.fixed-bar{background: linear-gradient(90deg, #3D952B, #336699); height: 50px; width: 100%; position: fixed; top: 0%; margin-top: 0px; border-radius: 0px;}
+
+/*logo and text container*/
+.logo_and_text_container{margin-left: 10%; font-family: 'Open Sans', Helvetica, Arial, sans-serif;}
+
+/*logo icon*/
+.logo_icon{margin-top: 5.5px; border-radius: 50%;}
+
+/*logo text */
+.logo_text{margin-top: 8px; font-weight: bold; margin-left: -43%;}
+.logo_text > h5{font-weight: bold;}
+
+/*home icons container*/
+.home_icons_container{margin-top: 13px; margin-left: 41%;}
+
+/*second row containing the first great image with opacity (IMAGE COVER TOP)*/
+.row-two{background: url('../../multipart/auditorium-2816353_960_720.jpg'); background-size: cover; height: 625px;}
+
+.cover-opacity{background: linear-gradient(90deg, #3D952B, #336699); height: 100%; opacity: .6;}
+
+.text-opacity{margin-top: 190px; text-align: center;}
+
+.opacity-text-1{text-shadow: 2px 2px 4px #000000; font-size: 3.5em; font-weight: bold;}
+
+.opacity-text-2{text-shadow: 2px 2px 4px #000000; font-size: 2em; font-weight: bold; margin-top: 3%;}
+
+.container-search{border: 2px solid white; height: 75px; border-radius: 50px; margin-top: 3%;}
+
+.container-input{height: 75px;}
+
+.container-search > .container-input > input{ height: 100%; width: 100%; background: transparent; border: none; color: white; font-size: 22px; border-radius: 50px;}
+
+.search-button{margin-top: 1.6%;}
+
+/*third row about how to order a ticket (with differents steps "comment reserver vos places")*/
+.row-three{background: linear-gradient(90deg, #3D952B, #336699); padding-top: 10px; padding-bottom: 18px;}
+
+.blockquote-title{margin: 2%; margin-left: 3%;}
+
+.blockquote-title > blockquote{height: 30px;}
+
+.blockquote-title > blockquote > p{margin-top: -0.5%; font-size: 20px;}
+
+.container-hr{margin-top: 1%; margin-left: 3%;}
+
+/*fourth row about differents events (evenement à la une)*/
+.row-four{margin-top: 3%; margin-bottom: 1%;}
+
+.blockquote-title-2{margin: 2%; margin-left: 3%;}
+
+.blockquote-title-2 > blockquote{height: 40px; border-color: #019939}
+
+.blockquote-title-2 > blockquote > h1{margin-top: -0.5%; font-size: 30px; color: #019939; font-weight: bold;}
+
+.blockquote-title-2 > blockquote > span{color: #707B7C; font-size: 16px;}
+
+.events-container{margin-top: 1%}
+
+.container-component{margin-bottom: 10px;}
+
+.events-pictures{height: 300px;}
+
+.date-event, .date-event-two, .date-event-three, .date-event-four, .date-event-five, .date-event-six{background: #019939; text-align: center; padding-top: -5%; margin-left: 5%; animation: 1s;}
+
+.month-date{font-size: 12px;}
+
+.container-text-event{margin-top: 120px;}
+
+.button-plus-view, .button-plus-view-two, .button-plus-view-three, .button-plus-view-four, .button-plus-view-five, .button-plus-view-six{margin-top: -48%; visibility: hidden;}
+
+.button-plus-view > h2, .button-plus-view-two > h2, .button-plus-view-three > h2, .button-plus-view-four > h2, .button-plus-view-five > h2, .button-plus-view-six > h2{color: white; font-size: 100px;}
+
+.event-title > p, .event-title-two > p, .event-title-three > p, .event-title-four > p, .event-title-five > p, .event-title-six > p{font-size: 19px; font-weight: bold; margin-left: -2%;}
+
+.opacty-events, .opacty-events-two, .opacty-events-three, .opacty-events-four, .opacty-events-five, .opacty-events-six{height: 100%; background: rgba(33, 47, 61, .6); margin-left: ; width: 100%; padding: 0 !important; cursor: pointer;}
+
+button{border: 2px solid white;color: white;padding: 5px;font-size: 16px;border-radius: 35px;padding-left: 10px;text-shadow: 2px 2px 4px #000000;box-shadow: 2px 2px 4px #000000;padding-right: 10px; margin-top: -8%;}
+
+
+/*categories's container (differents kind of events)*/
+.categories-container{margin-bottom: 3%;}
+
+.opacty-categories{height: 100%; background: #336699; opacity: .8; width: 100%; cursor: pointer; padding: 0 !important;}
+
+.opacty-categories-two{height: 100%; background: linear-gradient(90deg, #3D952B, #336699); opacity: .8; width: 100%; cursor: pointer; padding: 0 !important;}
+
+.opacty-categories-three{height: 100%; background: #336699; opacity: .8; width: 100%; cursor: pointer; padding: 0 !important;}
+
+.categorie-title > h2{font-weight: bold; text-align: center; text-shadow: 2px 2px 4px #000000; margin-top: 130px;}
+
+.categorie-title > h2:hover{font-size: 35px;}
+
+/*recent events bloc*/
+.recent-event-container{margin-bottom: 5%;}
+
+.component-recent-event{height: 180px; width: 24%; margin-left: 1%;}
+
+.image-recent-event{background-size: cover; height: 100%; width: 100%;}
+
+.video-button-recent{margin-top: 25%; cursor: pointer;}
+
+.text-recent-event{color:#212F3D; margin-top: 4%; margin-left: -12%;}
+
+.div-color-recent{height: 2px; background: #019939; margin-left: -6%;}
+
+
+/*RESPONSIVE CODE CSS */
+
+@media only screen and (max-width: 767px){
+
+  /*fixed bar*/
+  .opacity-text-1{font-weight: bold;font-size: 2.1em; margin-top: 6%;}
+  .opacity-text-2{font-weight: bold;font-size: 1.5em; margin-top: 5%;}
+  .row-three{padding-left: 10%;}
+  .container-hr{display: none;}
+  .component-recent-event{height: 180px; width: 49%; margin-bottom: 17%;}
+  .button-plus-view, .button-plus-view-two, .button-plus-view-three, .button-plus-view-four, .button-plus-view-five, .button-plus-view-six{display: none}
+  .container-component{height: 320px;}
+  .component-categorie{margin-bottom: 2%;}
+  .views-last-event{background: white; height: 500px; position: fixed; top: 80%; margin-left: 0%; display: none;}
+}
+
+/*EXTRA SMALL*/
+@media only screen and (max-width: 576px){
+  .component-recent-event{height: 180px; width: 49%; margin-bottom: 25%;}
+  .row-three{padding-left: 9%;}
+
+}
+
+/*SMALL*/
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  /*great opacity when people click on an items (exemple items view more about an event)*/
+  .great-opacity-container{height: 103%;}
+  .event-button > button, .event-button-two > button, .event-button-three > button, .event-button-four > button, .event-button-five > button, .event-button-six > button
+    {border: 2px solid white;color: white;padding: 5px;font-size: 12px;border-radius: 35px;padding-left: 5px;text-shadow: 2px 2px 4px #000000;
+    box-shadow: 2px 2px 4px #000000; padding-right: 5px; margin-top: -8%; margin-left: -18%; margin-bottom: 15%;}
+  .container-component{height: 330px;}
+  .button-plus-view, .button-plus-view-two, .button-plus-view-three, .button-plus-view-four, .button-plus-view-five, .button-plus-view-six{display: none}
+  .event-title > p, .event-title-two > p, .event-title-three > p, .event-title-four > p, .event-title-five > p, .event-title-six > p{font-size: 15px; font-weight: normal; margin-left: -2%;}
+}
+
+/*MEDIUM*/
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+
+  .great-opacity-container{height: 102%;}
+  .date-event, .date-event-two, .date-event-three, .date-event-four, .date-event-five, .date-event-six{background: #019939; text-align: center; padding-top: -5%; padding-right: 15%;margin-left: 5%; animation: 1s;}
+  .recent-event-container{margin-bottom: 10%;}
+  .date-and-where{margin-top: 25px;}
+  .categorie-title > h2{font-weight: bold; font-size: 25px; text-align: center; text-shadow: 2px 2px 4px #000000; margin-top: 130px;}
+  .categorie-title > h2:hover{font-size: 27px;}
+  .event-button > button, .event-button-two > button, .event-button-three > button, .event-button-four > button, .event-button-five > button, .event-button-six > button
+    {border: 2px solid white;color: white;padding: 5px;font-size: 15px;border-radius: 35px;padding-left: 5px;text-shadow: 2px 2px 4px #000000;
+    box-shadow: 2px 2px 4px #000000; padding-right: 5px; margin-top: -8%; margin-left: -18%; margin-bottom: 15%;}
+  .container-component{height: 330px;}
+  .text-details-events{font-size: 13px;}
+
+
+}
